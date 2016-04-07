@@ -1,0 +1,18 @@
+<html ng-app='myApp'>
+	<head>
+		<meta charset="UTF-8" />
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="app.js"></script>
+		<title>Document</title>
+	</head>
+	<body ng-controller="MainController">
+		<input type="text" ng-model="userInput"/>
+		<button ng-click="getGif()">Get a gif</button>
+		<div ng-show="buttonClicked">
+		<span>
+		Your Gif! 
+		</span>
+		<img ng-src="{{giffy.images.original.url}}"/>
+		</div>
+	</body>
+</html>
